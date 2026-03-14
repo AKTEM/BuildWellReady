@@ -62,7 +62,7 @@ export default function Contact() {
             {
               icon: Clock,
               label: 'Business Hours',
-              value: 'Monday – Friday | 9:00 AM – 5:00 PM',
+              value: 'Monday – Friday | 8:00 AM – 5:00 PM',
             },
           ].map((contact, index) => (
             <div
