@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://buildwellafrica.com/</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://buildwellafrica.com/HERO.png</image:loc>
+      <image:title>BuildWell Africa - Strategic Growth Through Excellence</image:title>
+      <image:caption>Leading multi-sector investment company in Nigeria</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Real Estate Services Page -->
+  <url>
+    <loc>https://buildwellafrica.com/services/real-estate</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://buildwellafrica.com/Real%20estate.webp</image:loc>
+      <image:title>Real Estate Investment and Property Sales in Nigeria</image:title>
+      <image:caption>Property investment, land acquisition, and real estate advisory services</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Construction Services Page -->
+  <url>
+    <loc>https://buildwellafrica.com/services/construction</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://buildwellafrica.com/Constructio.jpg</image:loc>
+      <image:title>Construction Services in Nigeria and Africa</image:title>
+      <image:caption>Residential and commercial construction projects</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Import & Export Services Page -->
+  <url>
+    <loc>https://buildwellafrica.com/services/import-export</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://buildwellafrica.com/Import.jpg</image:loc>
+      <image:title>Import Export Services in Nigeria</image:title>
+      <image:caption>International trade facilitation and logistics coordination</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Business Solutions Services Page -->
+  <url>
+    <loc>https://buildwellafrica.com/services/business-solutions</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://buildwellafrica.com/Business.png</image:loc>
+      <image:title>Business Solutions and Consulting in Nigeria</image:title>
+      <image:caption>Investment partnerships and multi-sector project development</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

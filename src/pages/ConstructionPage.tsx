@@ -1,9 +1,16 @@
 import { Building2, CheckCircle2, Ruler, HardHat, Settings } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { usePageMeta } from '../hooks/usePageMeta';
+import { seoPages } from '../utils/seo';
 
 export default function ConstructionPage() {
   const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => { setIsVisible(true); window.scrollTo(0, 0); }, []);
+  usePageMeta(seoPages.construction);
+
+  useEffect(() => {
+    setIsVisible(true);
+    window.scrollTo(0, 0);
+  }, []);
 
   const services = [
     'Residential construction',
@@ -33,7 +40,7 @@ export default function ConstructionPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
           <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <img src="/Constructio.jpg" alt="Construction" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
+            <img src="/Constructio.jpg" alt="Construction Company Nigeria - Residential and Commercial Building Projects Lagos" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
           </div>
           <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <h2 className="text-3xl font-bold text-[#2A266A] mb-6">Our Expertise Covers</h2>

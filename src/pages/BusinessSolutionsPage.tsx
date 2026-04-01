@@ -1,9 +1,16 @@
 import { Briefcase, CheckCircle2, Lightbulb, Handshake, BarChart3 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { usePageMeta } from '../hooks/usePageMeta';
+import { seoPages } from '../utils/seo';
 
 export default function BusinessSolutionsPage() {
   const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => { setIsVisible(true); window.scrollTo(0, 0); }, []);
+  usePageMeta(seoPages.businessSolutions);
+
+  useEffect(() => {
+    setIsVisible(true);
+    window.scrollTo(0, 0);
+  }, []);
 
   const services = [
     'Investment partnerships',
@@ -33,7 +40,7 @@ export default function BusinessSolutionsPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
           <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <img src="/Business.png" alt="Business Solutions" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
+            <img src="/Business.png" alt="Business Solutions and Investment Partnerships Nigeria - BuildWell Africa" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
           </div>
           <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <h2 className="text-3xl font-bold text-[#2A266A] mb-6">We Provide</h2>

@@ -16,8 +16,12 @@ import RealEstatePage from './pages/RealEstatePage';
 import ConstructionPage from './pages/ConstructionPage';
 import ImportExportPage from './pages/ImportExportPage';
 import BusinessSolutionsPage from './pages/BusinessSolutionsPage';
+import { seoPages } from './utils/seo';
+import { usePageMeta } from './hooks/usePageMeta';
 
 function HomePage() {
+  usePageMeta(seoPages.home);
+
   return (
     <>
       <Hero />

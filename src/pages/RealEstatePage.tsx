@@ -1,9 +1,16 @@
 import { Home, CheckCircle2, TrendingUp, Shield, MapPin } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { usePageMeta } from '../hooks/usePageMeta';
+import { seoPages } from '../utils/seo';
 
 export default function RealEstatePage() {
   const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => { setIsVisible(true); window.scrollTo(0, 0); }, []);
+  usePageMeta(seoPages.realEstate);
+
+  useEffect(() => {
+    setIsVisible(true);
+    window.scrollTo(0, 0);
+  }, []);
 
   const services = [
     'Buying and selling residential and commercial properties',
@@ -34,7 +41,7 @@ export default function RealEstatePage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
           <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <img src="/Real estate.webp" alt="Real Estate" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
+            <img src="/Real estate.webp" alt="Real Estate Investment and Property Sales in Lagos Nigeria - BuildWell Africa" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
           </div>
           <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <h2 className="text-3xl font-bold text-[#2A266A] mb-6">Our Services Include</h2>

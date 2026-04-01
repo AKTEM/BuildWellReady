@@ -1,9 +1,16 @@
 import { Globe, CheckCircle2, Ship, FileCheck, Truck } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { usePageMeta } from '../hooks/usePageMeta';
+import { seoPages } from '../utils/seo';
 
 export default function ImportExportPage() {
   const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => { setIsVisible(true); window.scrollTo(0, 0); }, []);
+  usePageMeta(seoPages.importExport);
+
+  useEffect(() => {
+    setIsVisible(true);
+    window.scrollTo(0, 0);
+  }, []);
 
   const services = [
     'International trade facilitation',
@@ -33,7 +40,7 @@ export default function ImportExportPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
           <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <img src="/Import.jpg" alt="Import Export" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
+            <img src="/Import.jpg" alt="Import Export Services Nigeria - International Trade Facilitation Africa" className="rounded-2xl shadow-2xl w-full h-96 object-cover" />
           </div>
           <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <h2 className="text-3xl font-bold text-[#2A266A] mb-6">Our Services Include</h2>
